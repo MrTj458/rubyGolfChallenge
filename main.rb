@@ -52,6 +52,19 @@ def multiples(n, m)
     ma << c * n
     c += 1
   end
-  
+
   return ma
+end
+
+# caesar Cipher
+def caeser_cipher(s, o)
+  r = s.split('')
+
+  r.each_index do |i|
+    o.times do
+      r[i] = r[i].next[-1]
+    end
+  end
+
+  return r.join
 end
