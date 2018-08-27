@@ -53,7 +53,7 @@ def multiples(n, m)
     c += 1
   end
 
-  return ma
+  ma
 end
 
 # caesar Cipher
@@ -66,7 +66,7 @@ def caeser_cipher(s, o)
     end
   end
 
-  return r.join
+  r.join
 end
 
 # String counter
