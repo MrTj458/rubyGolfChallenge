@@ -80,3 +80,16 @@ def string_counter(s, ss)
 
   a.length
 end
+
+# Love test
+def love_test(a, b)
+  c = a.gsub(/\s+/, "").split('').uniq
+  d = b.gsub(/\s+/, "").split('').uniq
+  t = 0
+  c.each_index do |i|
+    if d.include?(c[i])
+      t += 1
+    end
+  end
+  (a.length + b.length) / t
+end
