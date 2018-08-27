@@ -81,6 +81,18 @@ def string_counter(s, ss)
   a.length
 end
 
+# Mixed Pairs
+def mixed_pairs(arr)
+  r = []
+
+  ta = arr.flatten.shuffle!
+  while ta.length > 0
+    r << [ta.pop, ta.pop]
+  end
+
+  r
+end
+
 # Love test
 def love_test(a, b)
   c = a.gsub(/\s+/, "").split('').uniq
