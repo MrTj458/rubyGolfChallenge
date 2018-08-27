@@ -28,3 +28,16 @@ def RPC(uc)
 
   return r
 end
+
+#FizzBuzz
+def fizz_buzz
+  c = 1
+  while c < 101
+    r = ''
+    r += 'fizz' if c % 3 == 0
+    r += 'buzz' if c % 5 == 0
+    r += c.to_s if r == ''
+    c += 1
+    puts r
+  end
+end
