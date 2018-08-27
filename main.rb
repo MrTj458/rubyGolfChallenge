@@ -93,3 +93,15 @@ def love_test(a, b)
   end
   (a.length + b.length) / t
 end
+
+# Shopping List
+def shopping_list(l)
+  l.uniq!
+  l.each_index {|i| l[i] = l[i].downcase}
+  l.sort!
+  h = {}
+  l.each_index do |i|
+    h.store(i, l[i])
+  end
+  h
+end
