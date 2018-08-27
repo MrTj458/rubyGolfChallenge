@@ -1,3 +1,4 @@
+require 'pry'
 # Ruby Golf
 
 # Sum an array
@@ -29,7 +30,7 @@ def RPC(uc)
   return r
 end
 
-#FizzBuzz
+# FizzBuzz
 def fizz_buzz
   c = 1
   while c < 101
@@ -40,4 +41,17 @@ def fizz_buzz
     c += 1
     puts r
   end
+end
+
+# Multiples
+def multiples(n, m)
+  ma = []
+
+  c = 1
+  while c < m
+    ma << c * n
+    c += 1
+  end
+  
+  return ma
 end
