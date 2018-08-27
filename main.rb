@@ -68,3 +68,15 @@ def caeser_cipher(s, o)
 
   return r.join
 end
+
+# String counter
+def string_counter(s, ss)
+  a = []
+
+  i = 0
+  while i = s.index(ss, i + 1)
+    a << i
+  end
+
+  a.length
+end
